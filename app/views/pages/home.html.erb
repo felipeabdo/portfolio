@@ -1,1 +1,122 @@
-<h1>Oi galera!</h1>
+<%= content_tag :div, class: "content" do %>
+
+    <%= content_tag :div, id: "left-container" do %>
+        <%= content_tag :aside, id: "left" do %>
+
+          <%= content_tag :ul do %>
+
+            <%= content_tag :li, class: "nav-item no-click no-triangle", id:"profile-pic" do %>
+              <%= image_tag "profile2.jpg", alt: "Profile Picture", width: 155 %>
+              <%= content_tag :div, "Felipe Barroso Abdo", class: "name-profile uppercase" %>
+            <% end %>
+
+            <%= content_tag :li, class: "nav-item about" do %>
+              <%= content_tag :i, "", class: "fa-solid fa-user" %>
+              <%= content_tag :h4, "SOBRE MIM" %>
+              <%= content_tag :p, "QUEM SOU EU" %>
+            <% end %>
+
+            <%= content_tag :li, class: "nav-item resume" do %>
+              <%= content_tag :i, "", class: "fa-solid fa-briefcase" %>
+              <%= content_tag :h4, "CURRÍCULO" %>
+              <%= content_tag :p, "CURRICULUM VITAE" %>
+            <% end %>
+
+            <%= content_tag :li, class: "nav-item portfolio" do %>
+              <%= content_tag :i, "", class: "fa-solid fa-camera" %>
+              <%= content_tag :h4, "PORTFÓLIO" %>
+              <%= content_tag :p, "MEUS TRABALHOS" %>
+            <% end %>
+
+            <%= content_tag :li, class: "nav-item blog" do %>
+              <%= content_tag :i, "", class: "fa-solid fa-layer-group" %>
+              <%= content_tag :h4, "SKILLS" %>
+              <%= content_tag :p, "PARA TE AJUDAR" %>
+            <% end %>
+
+            <%= content_tag :li, class: "nav-item contact" do %>
+              <%= content_tag :i, "", class: "fa-solid fa-phone" %>
+              <%= content_tag :h4, "CONTATO" %>
+              <%= content_tag :p, "DIGA OLÁ!" %>
+            <% end %>
+
+          <% end %>
+
+        <% end %>
+    <% end %>
+
+    <%= content_tag :div, id: "content-container-container", class: "view" do %>
+        <%= content_tag :div, id: "content-container" do %>
+
+            <%= content_tag :div, id: "about-page", class: "view" do %>
+              <%= render partial: "about"%>
+            <% end %>
+
+            <%= content_tag :div, id: "resume-page", class: "view" do %>
+              <%= render partial: "resume"%>
+            <% end %>
+
+            <%= content_tag :div, id: "portfolio-page", class: "view" do %>
+              <%= render partial: "portfolio"%>
+            <% end %>
+
+            <%= content_tag :div, id: "blog-page", class: "view" do %>
+              <%= render partial: "blog"%>
+            <% end %>
+
+            <%= content_tag :div, id: "contact-page", class: "view" do %>
+              <%= render partial: "contact"%>
+            <% end %>
+
+        <% end %>
+    <% end %>
+
+    <%= content_tag :div, id: "right-container" do %>
+        <%= content_tag :aside, id: "right" do %>
+
+          <%= content_tag :ul do %>
+
+
+
+            <%= content_tag :li, class:"sn-box" do %>
+              <%= link_to 'https://www.facebook.com/felipe.abdo', target: '_blank' do %>
+                <%= content_tag :div do %>
+                  <i class="fa-brands fa-facebook-f fa-sm"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+
+            <%= content_tag :li, class:"sn-box" do %>
+              <%= link_to 'https://twitter.com/felipeabdo', target: '_blank' do %>
+                <%= content_tag :div do %>
+                  <i class="fa-brands fa-twitter fa-sm"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+
+            <%= content_tag :li, class:"sn-box" do %>
+              <%= link_to 'https://www.linkedin.com/in/felipeabdo/', target: '_blank' do %>
+                <%= content_tag :div do %>
+                  <i class="fa-brands fa-linkedin-in fa-sm"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+
+            <%= content_tag :li, class:"sn-box" do %>
+              <%= link_to 'https://github.com/felipeabdo', target: '_blank' do %>
+                <%= content_tag :div do %>
+                  <i class="fa-brands fa-github fa-sm"></i>
+                <% end %>
+              <% end %>
+            <% end %>
+
+            <%= content_tag :li, class:"sn-box uppercase" do %>
+              © 2023 felipe barroso abdo.
+            <% end %>
+
+          <% end %>
+
+        <% end %>
+    <% end %>
+
+<% end %>

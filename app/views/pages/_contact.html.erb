@@ -1,0 +1,68 @@
+<%= content_tag :div, id:"contact-content" do %>
+
+  <%= content_tag :div, id:"contact-title" do %>
+    <%= content_tag :h1, "Contato" %>
+    <%= content_tag :p, "DIGA OI!" %>
+  <% end %>
+
+  <%= content_tag :div, class:"separator" do %> <% end %>
+
+  <%= content_tag :div, class:"text-title uppercase" do %> <strong> onde me encontrar </strong> <% end %>
+
+  <%= tag.div id: 'cards' do %>
+
+
+
+    <%= tag.div class: 'card' do %>
+      <%= content_tag :i, "", class: "fa-solid fa-map-location-dot" %>
+      <%= tag.h5 'Endereço' %>
+
+      <%= tag.p '' %>
+
+      <%= tag.p '' do %>
+        <%= link_to "https://goo.gl/maps/uGtJAg4DYmCHAGeu6", target: "_blank" do %>
+          <%= image_tag("bsb.png", class: "text-icons") %>
+            Brasília - DF
+        <% end %>
+      <% end %>
+
+
+    <% end %>
+
+    <%= tag.div class: 'card' do %>
+      <%= content_tag :i, "", class: "fa-solid fa-mobile-screen-button" %>
+      <%= tag.h5 'Telefone' %>
+
+      <%= link_to "https://contate.me/felipeabdo", target: "_blank", style: "text-decoration: none; color: #000; display: flex; align-items: flex-end;" do %>
+        <%= content_tag :p, style: "display: inline; margin-right: 10px; text-align: center;" do %>
+          <%= content_tag :i, "", class: "fa-brands fa-whatsapp", style: "color: #16c539; margin-right: 5px; position: relative; top: 2px; font-size: 1.2em; font-weight: bold;" %>
+          <%= tag.span '(61 9 8629-6622)' %>
+        <% end %>
+      <% end %>
+    <% end %>
+
+
+
+
+    <%= tag.div class: 'card' do %>
+      <%= content_tag :i, "", class: "fa-regular fa-envelope" %>
+      <%= tag.h5 'Email' %>
+
+      <%= tag.p '' %>
+
+      <%= tag.p do %>
+        <%= link_to "mailto:felipe.abdo.ti@gmail.com", target: "_blank" do %>
+          <%= image_tag("gmail.png", class: "text-icons") %>
+           felipe.abdo.ti@gmail.com
+        <% end %>
+      <% end %>
+
+
+
+    <% end %>
+
+   <% end %>
+
+
+
+<% end %>

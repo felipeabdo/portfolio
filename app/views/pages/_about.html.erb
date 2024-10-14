@@ -1,0 +1,35 @@
+<%= content_tag :div, id:"about-content" do %>
+
+  <%= content_tag :div, id:"about-title" do %>
+    <%= content_tag :h1, "Felipe Barroso Abdo" %>
+    <%= content_tag :p, "Web Designer / Web Developer" %>
+  <% end %>
+
+  <%= content_tag :div, class:"separator" do %> <% end %>
+
+  <%= content_tag :div, class:"text-title uppercase" do %> <strong> sobre mim </strong> <% end %>
+
+  <%= content_tag :p , class:"text-p" do %>
+
+    Seja bem vinda (o)! Deixa eu me apresentar! Estudei Propaganda e Marketing no UniCEUB e atuei na área por alguns anos, mas senti a necessidade de uma mudança de carreira. Se você está aqui, pode perceber que a mudança já começou. Cursei o Bootcamp da  <%= link_to "Le Wagon", "https://www.lewagon.com/pt-BR", target: "_blank" %>
+    <%= link_to "https://www.lewagon.com/pt-BR", target: "_blank" do %>
+      <%= image_tag "wagon-mini.png", class:"text-icons", alt: "Le Wagon" %>
+    <% end %> , me capacitando para encontrar soluções em desenvolvimento Fullstack. Meu background como designer me capacita a buscar soluções criativas, entregando interfaces elegantes e funcionais. Sou também músico por formação e essa vivência de palco me possibilitou adquirir habilidades de comunicação, trabalho em equipe, lidar com pressão e disposição a ouvir e aprender, que são soft-skills importantíssimas para o mercado.
+
+  <% end %>
+
+  <%= content_tag :p , class:"text-p" do %>
+
+    Estou constantemente buscando me atualizar com as mais novas tecnologias e tendências de mercado para executar trabalhos modernos e expandir o leque de possibilidades, sempre visando a satisfação do cliente, da equipe à qual eu pertença e buscando sempre contribuir. O sucesso é sempre importante para todas as partes!
+
+  <% end %>
+
+  <%= content_tag :p , class:"text-p" do %>
+
+    Sinta-se à vontade para explorar e entender como posso te ajudar! No que for preciso, entre em contato. Conte comigo!
+
+  <% end %>
+
+  <%= image_tag "signature.png", class: 'signature', width: '100', height: '50' %>
+
+<% end %>

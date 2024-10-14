@@ -1,0 +1,47 @@
+<%= content_tag :div, id:"portfolio-content" do %>
+
+  <%= content_tag :div, id:"portfolio-title" do %>
+    <%= content_tag :h1, "Portfólio" %>
+    <%= content_tag :p, "MEUS TRABALHOS" %>
+  <% end %>
+
+  <%= content_tag :div, class:"separator" do %> <% end %>
+
+<%= content_tag :div, class:"text-title uppercase" do %> <strong> Projetos </strong> <% end %>
+
+  <div class="pages">
+
+
+    <%= link_to "https://grin-go.herokuapp.com/", target:"_blank" do %>
+      <%= content_tag :h5 do %> Grin.go <% end %>
+      <%= image_tag "gringo.png", alt: "Grin.go" %>
+    <% end %>
+
+
+  </div>
+
+  <div class="horizline"></div>
+
+  <div class="pages">
+
+    <%= link_to "#", target:"_blank" do %>
+      <%= content_tag :h5 do %> Roast Hub <% end %>
+      <%= image_tag "roasthub.png", alt: "Roast Hub" %>
+
+    <% end %>
+
+  </div>
+
+  <div class="horizline"></div>
+
+  <div class="pages">
+
+    <%= link_to "https://personal-page.fly.dev/", target:"_blank" do %>
+      <%= content_tag :h5 do %> Meu Portifólio <% end %>
+      <%= image_tag "portifa.png", alt: "Portifólio" %>
+
+    <% end %>
+
+  </div>
+
+<% end %>

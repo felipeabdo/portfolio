@@ -2,6 +2,14 @@ source "https://rubygems.org"
 
 ruby '3.3.5'
 
+# SCSS
+gem 'sassc-rails'
+
+# Font Awesome
+gem "font-awesome-sass", "~> 6.5.2"
+
+# Bootstrap
+gem 'bootstrap', '~> 5.3', '>= 5.3.3'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.1"

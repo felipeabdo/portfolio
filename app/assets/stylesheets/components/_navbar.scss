@@ -1,0 +1,125 @@
+
+#left {
+  position: absolute;
+  top: -16px;
+  left: -156px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  width: 155px;
+  height: 155px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(63, 63, 63, 0.162);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#profile-pic {
+  height: 185px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.name-profile {
+  font-family: 'Roboto Slab';
+  height: 31px;
+  width: 100%;
+  color: #e8e8e8;
+  background-color: #3F3F3F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  background-image: linear-gradient(to left, white 0%, white 50%, #FFD42D 50%, #FFD42D 100%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: background-position 0.5s, background-color 0.5s;
+  cursor: pointer;
+
+  &.active {
+    background-position: left;
+    background-color: #FFD42D;
+  }
+
+  &:not(.active):hover {
+    background-color: #FFD42D;
+  }
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #FFD42D;
+    transition: right 0.25s ease-in;
+    animation-name: triangle-show;
+    animation-duration: 0.25s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &.no-click {
+    pointer-events: none;
+  }
+
+  &.no-triangle::after {
+    display: none;
+  }
+}
+
+@keyframes triangle-show {
+  0% {
+    right: 0px;
+    opacity: 1;
+  }
+  100% {
+    right: -19px;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+
+li i {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+li h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+  font-weight: 900;
+  margin-bottom: 0.15em;
+}
+
+li p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.link-active {
+
+}

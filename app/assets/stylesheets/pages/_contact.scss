@@ -1,0 +1,25 @@
+#contact-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  height: 1000px;
+
+  #contact-title {
+    text-align: center;
+    margin-bottom: 85px;
+
+    h1 {
+      font-family: 'Roboto Slab';
+      font-size: 55px;
+      font-weight: 400;
+    }
+
+    p {
+      font-family: 'Roboto Slab';
+      font-size: 20px;
+      font-weight: 300;
+      color: rgba(110, 110, 110, 0.792);
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.time-box {
+  border: 2px solid #dcd9d9;
+  width: 350px;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 17px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time-box p {
+  font-size: 10px;
+}
+
+.time-box h6 {
+  font-weight: 900;
+  margin-top: 12px;
+  // text-align: left;
+}
+
+.esq {
+  margin-right: 130%;
+  position: relative;
+}
+
+.dir {
+  margin-left: 130%;
+  position: relative;
+}
+
+.linha {
+  position: absolute;
+  top: 661px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  height: 100%;
+  background: #dcd9d9;
+}
+
+.esq .linha-hor {
+  position: absolute;
+  top: 50%;
+  right: -54px;
+  height: 1px;
+  width: 53px;
+  background: #dcd9d9;
+}
+
+.esq .quadradinho {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #FFD42D;
+  top: 41.5%;
+  right: -64px;
+}
+
+.dir .linha-hor {
+  position: absolute;
+  top: 50.4%;
+  right: 348px;
+  height: 1px;
+  width: 53px;
+  background: #dcd9d9;
+}
+
+.dir .quadradinho {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #000;
+  top: 42.6%;
+  right: 391px;
+}

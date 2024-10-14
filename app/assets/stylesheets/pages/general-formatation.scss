@@ -1,0 +1,43 @@
+.text-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Roboto Slab';
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.text-p {
+  font-family: 'Source Sans';
+  font-weight: 400;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 27px;
+  color: #999;
+  text-align: justify;
+  // width: 670px;
+}
+
+.sub-title {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #000;
+}
+
+.text-icons {
+  vertical-align: middle;
+  width: 24px;
+  margin-bottom: 4px;
+}
+
+li:not(.active):hover {
+  background-color: #343a40;
+}

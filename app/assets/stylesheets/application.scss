@@ -1,0 +1,13 @@
+// Importação de arquivos de configuração
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables"; 
+
+// Importação de bibliotecas externas
+// @import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Importação dos componentes
+@import "components/index";
+@import "pages/index";

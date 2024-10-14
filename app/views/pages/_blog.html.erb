@@ -1,0 +1,23 @@
+<%= content_tag :div, id:"blog-content" do %>
+
+    <%= content_tag :div, id:"blog-title" do %>
+      <%= content_tag :h1, "Skills" %>
+      <%= content_tag :p, "PARA TE AJUDAR" %>
+    <% end %>
+
+    <%= content_tag :div, class:"separator" do %> <% end %>
+
+    <%= content_tag :div, class:"text-title uppercase" do %> <strong> Skills </strong> <% end %>
+
+    <%= content_tag :div, id:"skills" do %>
+
+      <%= image_tag "html.png", class:"stacks", alt: "HTML" %>
+      <%= image_tag "css.png", class:"stacks", alt: "CSS" %>
+      <%= image_tag "js.png", class:"stacks", alt: "Javascript" %>
+      <%= image_tag "ruby.png", class:"stacks", alt: "Ruby" %>
+      <%= image_tag "rails.png", class:"stacks", alt: "Ruby on Rails" %>
+      <%= image_tag "git.png", class:"stacks", alt: "GIT" %>
+      <%= image_tag "bootstrap.png", class:"stacks", alt: "Bootstrap" %>
+    <% end %>
+
+<% end %>

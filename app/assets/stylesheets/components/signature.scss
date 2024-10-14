@@ -1,0 +1,26 @@
+.signature {
+  width: 75px;
+  height: 37.5px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.signature svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.signature .draw {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: desenhar 10.5s linear forwards;
+}
+
+@keyframes desenhar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

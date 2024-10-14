@@ -1,0 +1,52 @@
+// Specific SCSS for your home-page
+
+body {
+  background-color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 990px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  margin: 154px 0px;
+  margin-left: 117px;
+}
+
+
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  flex-grow: 1;
+  transition: opacity 0.3s; /* Adiciona transição suave de opacidade */
+  opacity: 0; /* Inicialmente esconde as seções */
+  height: 100vh; /* Ajuste a altura conforme necessário */
+  overflow-y: auto; /* Adiciona barra de rolagem quando necessário */
+}
+
+.active-section {
+  opacity: 1; /* Exibe a seção ativa */
+}
+
+#about-page {
+  display: block;
+}
+
+#resume-page,
+#portfolio-page,
+#blog-page,
+#contact-page {
+  display: none;
+}
