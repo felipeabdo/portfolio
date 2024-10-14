@@ -1,4 +1,4 @@
-<%= content_tag :div, class: "content" do %>
+<%= content_tag :div, class: "content", data: { controller: "navbar" } do %> <!-- Adicione o controlador aqui -->
 
     <%= content_tag :div, id: "left-container" do %>
         <%= content_tag :aside, id: "left" do %>
@@ -10,31 +10,32 @@
               <%= content_tag :div, "Felipe Barroso Abdo", class: "name-profile uppercase" %>
             <% end %>
 
-            <%= content_tag :li, class: "nav-item about" do %>
+            <%= content_tag :li, class: "nav-item about", data: { action: "click->navbar#showPartial" } do %>
               <%= content_tag :i, "", class: "fa-solid fa-user" %>
               <%= content_tag :h4, "SOBRE MIM" %>
               <%= content_tag :p, "QUEM SOU EU" %>
             <% end %>
 
-            <%= content_tag :li, class: "nav-item resume" do %>
+
+            <%= content_tag :li, class: "nav-item resume", data: { action: "click->navbar#showPartial" } do %>
               <%= content_tag :i, "", class: "fa-solid fa-briefcase" %>
               <%= content_tag :h4, "CURRÍCULO" %>
               <%= content_tag :p, "CURRICULUM VITAE" %>
             <% end %>
 
-            <%= content_tag :li, class: "nav-item portfolio" do %>
+            <%= content_tag :li, class: "nav-item portfolio", data: { action: "click->navbar#showPartial" } do %>
               <%= content_tag :i, "", class: "fa-solid fa-camera" %>
               <%= content_tag :h4, "PORTFÓLIO" %>
               <%= content_tag :p, "MEUS TRABALHOS" %>
             <% end %>
 
-            <%= content_tag :li, class: "nav-item blog" do %>
+            <%= content_tag :li, class: "nav-item blog", data: { action: "click->navbar#showPartial" } do %>
               <%= content_tag :i, "", class: "fa-solid fa-layer-group" %>
               <%= content_tag :h4, "SKILLS" %>
               <%= content_tag :p, "PARA TE AJUDAR" %>
             <% end %>
 
-            <%= content_tag :li, class: "nav-item contact" do %>
+            <%= content_tag :li, class: "nav-item contact", data: { action: "click->navbar#showPartial" } do %>
               <%= content_tag :i, "", class: "fa-solid fa-phone" %>
               <%= content_tag :h4, "CONTATO" %>
               <%= content_tag :p, "DIGA OLÁ!" %>
@@ -48,23 +49,23 @@
     <%= content_tag :div, id: "content-container-container", class: "view" do %>
         <%= content_tag :div, id: "content-container" do %>
 
-            <%= content_tag :div, id: "about-page", class: "view" do %>
+            <%= content_tag :div, id: "about-page", class: "view", data: { target: "navbar.partial" } do %>
               <%= render partial: "about"%>
             <% end %>
 
-            <%= content_tag :div, id: "resume-page", class: "view" do %>
+            <%= content_tag :div, id: "resume-page", class: "view", data: { target: "navbar.partial" } do %>
               <%= render partial: "resume"%>
             <% end %>
 
-            <%= content_tag :div, id: "portfolio-page", class: "view" do %>
+            <%= content_tag :div, id: "portfolio-page", class: "view", data: { target: "navbar.partial" } do %>
               <%= render partial: "portfolio"%>
             <% end %>
 
-            <%= content_tag :div, id: "blog-page", class: "view" do %>
+            <%= content_tag :div, id: "blog-page", class: "view", data: { target: "navbar.partial" } do %>
               <%= render partial: "blog"%>
             <% end %>
 
-            <%= content_tag :div, id: "contact-page", class: "view" do %>
+            <%= content_tag :div, id: "contact-page", class: "view", data: { target: "navbar.partial" } do %>
               <%= render partial: "contact"%>
             <% end %>
 
@@ -75,8 +76,6 @@
         <%= content_tag :aside, id: "right" do %>
 
           <%= content_tag :ul do %>
-
-
 
             <%= content_tag :li, class:"sn-box" do %>
               <%= link_to 'https://www.facebook.com/felipe.abdo', target: '_blank' do %>
