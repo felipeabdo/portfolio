@@ -10,7 +10,7 @@ console_command = '/rails/bin/rails console'
 [build]
 
 [env]
-  DATABASE_URL = 'postgres://username:password@host:port/dbname'
+  SECRET_KEY_BASE = "a142d0fbb14466c16be37116a3adebe43f3ba0eae2a9b2da8c05ce320e86fcfc0601b7793d45e3fb8f5946ade3f104b1fa04aa67e0b16bcc7d9b93d923295e06"
 
 [http_service]
   internal_port = 3000
