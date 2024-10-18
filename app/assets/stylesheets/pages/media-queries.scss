@@ -4,40 +4,79 @@
   }
 
   .time-box {
-    width: 300px;
+    width: 280px;
   }
 
   .esq .quadradinho {
-    right: -57px;
+    right: -61px;
   }
 
   .dir .quadradinho {
-    right: 334px;
+    right: 359px;
   }
 
   .dir .linha-hor {
     height: 1px;
     width: 47px;
-    right: 297px;
+    right: 324px;
   }
 
   .esq .linha-hor {
     width: 52px;
   }
 
-  .time-box h6, .time-box .h6 {
-    font-size: 13px;
+  .time-box h6 {
+    font-size: 17px;
     margin-top: 0px;
   }
 
   .time-box p {
-    font-size: 9px;
+    font-size: 14px;
 }
 }
 
+@media (max-width: 1245px) {
+  .content {
+    width: 66%;
+  }
+
+  .time-box {
+    width: 240px;
+  }
+
+  .esq .quadradinho {
+    right: -55px;
+  }
+
+  .dir .quadradinho {
+    right: 313px;
+  }
+
+  .dir .linha-hor {
+    height: 1px;
+    width: 47px;
+    right: 278px;
+  }
+
+  .esq .linha-hor {
+    width: 52px;
+  }
+
+  .time-box h6 {
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .time-box p {
+    font-size: 14px;
+}
+}
+
+
+
 @media (max-width: 1100px) {
   .time-box {
-    width: 260px;
+    width: 200px;
   }
 
   .esq .quadradinho {
@@ -45,13 +84,13 @@
   }
 
   .dir .quadradinho {
-    right: 287px;
+    right: 268px;
   }
 
   .dir .linha-hor {
     height: 1px;
     width: 47px;
-    right: 256px;
+    right: 242px;
   }
 
   .esq .linha-hor {
@@ -65,7 +104,7 @@
   }
 
   .time-box p {
-    font-size: 9px;
+    font-size: 14px;
 }
 }
 
@@ -121,7 +160,7 @@
   }
 
   .nav-item {
-    flex-basis: 20%;
+    flex-basis: 19.7%;
   }
 
   .name-profile {
@@ -150,8 +189,8 @@
   li.active::after {
     content: '';
     position: absolute;
-    transform: translateX(-120%);
     width: 0;
+    transform: translate(-120%, -35%);
     height: 0;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
@@ -161,7 +200,7 @@
     animation-duration: 0.25s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
-    z-index: -1;
+    z-index: -3;
     opacity: 0;
   }
 
@@ -179,6 +218,11 @@
 }
 
 @media (max-width: 765px) {
+
+  .content {
+    top: 42px;
+  }
+
   .time-box {
     width: 380px;
     border: 2px solid #dcd9d9;
@@ -247,6 +291,10 @@
     top: 338px;
   }
 
+  #right {
+    top: -72px;
+    right: 0px;
+}
 
 
   li i {
@@ -261,8 +309,8 @@
   }
 
   .nav-item {
-    width: 86px;
-    height: 86px;
+    flex-basis: 19.6%;
+    bottom: 42px;
     border-bottom: 1px solid #FFD42D;
   }
 
@@ -404,8 +452,8 @@
     width: 100px;
     height: 156px;
     position: relative;
-    margin: -213px 103px 131px 103px;
-    left: -21px;
+    margin: -163px 103px 31px 103px;
+    left: -81px;
   }
 
   #profile-pic img {
@@ -416,14 +464,14 @@
 
   .name-profile {
     position: absolute;
+    right: -22px;
     bottom: -32px;
     height: 32px;
     width: 156px;
   }
 
   .nav-item {
-    width: 86px;
-    height: 68px;
+    flex-basis: 19.3%;
     border-bottom: 1px solid #FFD42D;
   }
 
@@ -439,7 +487,7 @@
   }
 
   #right {
-    top: -73px;
+    top: -63px;
     right: 56px;
   }
 
@@ -472,6 +520,7 @@
   li.sn-box:not(:last-child) {
     width: 45.9px;
     height: 45.9px;
+    right: 57px;
     background: #000;
     margin-bottom: 1px;
   }
