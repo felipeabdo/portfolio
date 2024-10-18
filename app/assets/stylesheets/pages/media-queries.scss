@@ -428,6 +428,7 @@
     margin-left: 80px;
   }
 
+
   #about-content #about-title, #resume-content #resume-title, #portfolio-content #portfolio-title, #contact-content #contact-title {
     text-align: center;
     margin-bottom: 27px;
@@ -452,26 +453,28 @@
     width: 100px;
     height: 156px;
     position: relative;
-    margin: -163px 103px 31px 103px;
+    margin: -163px 103px 77px 103px;
     left: -81px;
-  }
 
   #profile-pic img {
     position: absolute;
     bottom: 0;
-    width: 155px;
+    width: 203px;
+    left: -20px;
+    top: -1px;
   }
 
   .name-profile {
     position: absolute;
-    right: -22px;
-    bottom: -32px;
+    right: -70px;
+    bottom: -78px;
     height: 32px;
-    width: 156px;
+    width: 204px;
   }
 
   .nav-item {
-    flex-basis: 19.3%;
+    flex-basis: 19.37%;
+    height: 62px;
     border-bottom: 1px solid #FFD42D;
   }
 
@@ -487,8 +490,8 @@
   }
 
   #right {
-    top: -63px;
-    right: 56px;
+    top: -65px;
+    right: 7px;
   }
 
   #right ul {
@@ -496,7 +499,7 @@
   }
 
   #content-container {
-    top: 281px;
+    top: 249px;
     left: 34px;
     width: 317px;
   }
@@ -518,11 +521,12 @@
   }
 
   li.sn-box:not(:last-child) {
-    width: 45.9px;
-    height: 45.9px;
-    right: 57px;
+    width: 57.9px;
+    height: 57.9px;
+    right: 50px;
     background: #000;
     margin-bottom: 1px;
+}
   }
 
   li.sn-box:last-child {
