@@ -180,6 +180,11 @@
     right: 0;
   }
 
+  li p {
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
   li.sn-box:last-child {
     width: 206px;
     height: 40px;
@@ -239,23 +244,16 @@
   }
 
   .esq {
-    margin-right: -23%;
+    margin-right: -9%;
     position: relative;
   }
 
   .esq .linha-hor {
-    position: absolute;
-    top: 50%;
-    right: 371px;
-    height: 2px;
-    width: 89px;
-    background: #dcd9d9;
+    display: none;
   }
 
   .dir .linha-hor {
-    height: 2px;
-    width: 90px;
-    right: 377px;
+    display: none;
   }
 
   .esq .quadradinho {
@@ -264,16 +262,16 @@
     position: absolute;
     background: #FFD42D;
     top: 41.5%;
-    right: 459px;
+    right: 440px;
   }
 
   .dir {
-    margin-left: 22%;
+    margin-left: 9%;
     position: relative;
   }
 
   .dir .quadradinho {
-    right: 456px;
+    right: 440px;
   }
 
   .content {
@@ -320,6 +318,7 @@
 
   li p {
     font-size: 9px;
+    margin-bottom: 43px;
   }
 
   li.active::after {
@@ -327,7 +326,7 @@
     position: absolute;
     top: 83px;
     left: 77px;
-    transform: translateX(-120%);
+    transform: translate(-120%, 120%);
     width: 0;
     height: 0;
     border-left: 20px solid transparent;
@@ -338,7 +337,7 @@
     animation-duration: 0.25s;
     animation-delay: 0.4s;
     animation-fill-mode: forwards;
-    z-index: -1;
+    z-index: -3;
     opacity: 0;
   }
 
@@ -386,8 +385,7 @@
   }
 
   .esq {
-    margin-right: -23%;
-    position: relative;
+    margin-left: -3%;
   }
 
   .esq .linha-hor {
@@ -399,28 +397,23 @@
     background: #dcd9d9;
   }
 
-  .dir .linha-hor {
-    height: 2px;
-    width: 45px;
-    right: 234px;
-  }
-
   .esq .quadradinho {
     width: 20px;
     height: 20px;
     position: absolute;
     background: #FFD42D;
-    top: 41.5%;
-    right: 265px;
+    top: -5.5%;
+    right: 137px;
   }
 
   .dir {
-    margin-left: 22%;
+    margin-left: 3%;
     position: relative;
   }
 
   .dir .quadradinho {
-    right: 265px;
+    right: 134px;
+        top: -10px;
   }
 
   .content {
@@ -536,6 +529,7 @@
 
   li.active::after {
     left: 60px;
+    transform: translate(-120%, -3%);
   }
 
 }
