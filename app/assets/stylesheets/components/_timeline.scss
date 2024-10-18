@@ -11,20 +11,21 @@
   width: 350px;
   height: 120px;
   margin-bottom: 30px;
-  padding: 17px 20px;
+  padding: 24px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .time-box p {
-  font-size: 10px;
+  font-size: 16px;
 }
 
 .time-box h6 {
   font-weight: 900;
-  margin-top: 12px;
-  // text-align: left;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .esq {
@@ -39,7 +40,7 @@
 
 .linha {
   position: absolute;
-  top: 820px;
+  top: 908px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 3px;
@@ -61,14 +62,14 @@
   height: 20px;
   position: absolute;
   background: #FFD42D;
-  top: 41.5%;
+  top: 44.5%;
   right: -71px;
 }
 
 .dir .linha-hor {
   position: absolute;
   top: 50.4%;
-  right: 348px;
+  right: 387px;
   height: 1px;
   width: 53px;
   background: #dcd9d9;
@@ -79,6 +80,6 @@
   height: 20px;
   position: absolute;
   background: #000;
-  top: 42.6%;
+  top: 43.6%;
   right: 439px;
 }
