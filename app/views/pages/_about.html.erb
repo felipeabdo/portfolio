@@ -11,10 +11,55 @@
 
   <%= content_tag :p , class:"text-p" do %>
 
-    Seja bem vinda (o)! Deixa eu me apresentar! Estudei Propaganda e Marketing no UniCEUB e atuei na área por alguns anos, mas senti a necessidade de uma mudança de carreira. Se você está aqui, pode perceber que a mudança já começou. Cursei o Bootcamp da  <%= link_to "Le Wagon", "https://www.lewagon.com/pt-BR", target: "_blank" %>
+    Seja bem vinda (o)! Deixa eu me apresentar! Estudei Propaganda e Marketing no UniCEUB e atuei na área por alguns anos, mas senti a necessidade de uma mudança de carreira. Hoje curso a faculdade de Análise e Desenvolvimento de Sistemas no
+    <%= link_to "IESB", "https://www.iesb.br/", target: "_blank" %>
+
+    <%= link_to "https://www.iesb.br/", target: "_blank" do %>
+      <%= image_tag "iesb.png", class:"text-icons", alt: "IESB logo" %>
+     <% end %>
+
+   <% end %>
+
+
+
+   <%= content_tag :p , class:"text-p" do %>
+
+    Se você está aqui, pode perceber que a mudança já começou. Cursei o Bootcamp da
+    <%= link_to "Le Wagon", "https://www.lewagon.com/pt-BR", target: "_blank" %>
+
     <%= link_to "https://www.lewagon.com/pt-BR", target: "_blank" do %>
-      <%= image_tag "wagon-mini.png", class:"text-icons", alt: "Le Wagon" %>
-    <% end %> , me capacitando para encontrar soluções em desenvolvimento Fullstack. Meu background como designer me capacita a buscar soluções criativas, entregando interfaces elegantes e funcionais. Sou também músico por formação e essa vivência de palco me possibilitou adquirir habilidades de comunicação, trabalho em equipe, lidar com pressão e disposição a ouvir e aprender, que são soft-skills importantíssimas para o mercado.
+      <%= image_tag "wagon-mini.png", class:"text-icons", alt: "Le Wagon logo" %>
+    <% end %>
+
+    , me capacitando a encontrar soluções em desenvolvimento Fullstack com Ruby e Rails. Também participei do
+
+    <%= link_to "Orion Bootcamp", "https://newrizon.global/bootcamp-new-rizon/", target: "_blank" %>
+
+    <%= link_to "https://newrizon.global/bootcamp-new-rizon/", target: "_blank" do %>
+      <%= image_tag "orion.png", class:"text-icons", alt: "Orion Bootcamp logo" %>
+    <% end %>
+
+    da New Rizon, sendo selecionado entre 50 pessoas de mais de 3000 candidatos, me capacitando a trabalhar com Angular e Typescript.
+
+  <% end %>
+
+  <%= content_tag :p , class:"text-p" do %>
+
+    Recentemente participei de um projeto chamado Rubi nos Trilhos, a convite da Le Wagon, num grupo formado por ex-alunos e que foi apresentado na
+
+    <%= link_to "Tropical Ruby", "https://www.tropicalonrails.com/", target: "_blank" %>
+
+    <%= link_to "https://www.tropicalonrails.com/", target: "_blank" do %>
+      <%= image_tag "tropical.png", class:"text-icons", alt: "Tropical on Rails logo" %>
+    <% end %>
+
+    (agora chamara de Tropical on Rails, a maior conferência de Ruby da América Latina).
+
+  <% end %>
+
+  <%= content_tag :p , class:"text-p" do %>
+
+    Meu background como designer me capacita a buscar soluções criativas, entregando interfaces elegantes e funcionais. Sou também músico por formação e essa vivência de palco me possibilitou adquirir habilidades de comunicação, trabalho em equipe, lidar com pressão e disposição a ouvir e aprender, que são soft-skills importantíssimas para o mercado.
 
   <% end %>
 
