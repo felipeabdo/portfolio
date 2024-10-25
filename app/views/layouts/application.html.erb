@@ -9,11 +9,25 @@
 
     <%= yield :head %>
 
-    <link rel="icon" href="<%= asset_path('favicon.ico') %>" type="image/x-icon">
+
+
+
+<link rel="icon" href="<%= asset_path('favicon-no-back.ico') %>" type="image/x-icon" media="(prefers-color-scheme: light)">
+<link rel="icon" href="<%= asset_path('favicon-no-back-d.ico') %>" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="<%= asset_path('favicon-no-back.ico') %>" type="image/png" media="(prefers-color-scheme: light)">
+<link rel="icon" href="<%= asset_path('favicon-no-back-d.ico') %>" type="image/png" media="(prefers-color-scheme: dark)">
+
+<link rel="icon" href="<%= asset_path('favicon-no-back.ico') %>" type="image/svg+xml" media="(prefers-color-scheme: light)">
+<link rel="icon" href="<%= asset_path('favicon-no-back-d.ico') %>" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+
+<link rel="apple-touch-icon" href="<%= asset_path('favicon-no-back.ico') %>" media="(prefers-color-scheme: light)">
+<link rel="apple-touch-icon" href="<%= asset_path('favicon-no-back-d.ico') %>" media="(prefers-color-scheme: dark)">
+
+
+
+
     <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
