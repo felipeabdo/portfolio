@@ -6,7 +6,7 @@ ruby '3.3.5'
 gem 'sassc-rails'
 
 # Font Awesome
-gem "font-awesome-sass", "~> 6.5.2"
+gem "font-awesome-sass", "~> 6.7.2"
 
 # Bootstrap
 gem 'bootstrap', '~> 5.3', '>= 5.3.3'
